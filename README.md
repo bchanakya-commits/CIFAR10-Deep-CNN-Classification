@@ -125,3 +125,56 @@ If the saved model is unavailable, training must be completed before evaluation.
 This project demonstrates the use of Deep Learning and Convolutional Neural Networks for image classification.
 
 The trained model achieved **86.38% test accuracy** on CIFAR-10 and was integrated with an interactive Gradio interface.
+
+---
+
+## Model Performance
+
+The Deep Convolutional Neural Network (CNN) was trained on the CIFAR-10 dataset containing 10 image categories.
+
+### Final Evaluation Results
+
+| Metric | Value |
+|--------|-------|
+| Test Accuracy | 86.38% |
+| Test Loss | 0.4196 |
+| Test Images | 10,000 |
+| Image Size | 32 × 32 × 3 |
+| Number of Classes | 10 |
+
+### Training and Validation Performance
+
+The following graphs show how the CNN model improved during training across 30 epochs.
+
+![CNN Training Accuracy and Loss](results/training_history.png)
+
+### Confusion Matrix
+
+The confusion matrix illustrates the classification performance of the CNN model across all 10 CIFAR-10 classes.
+
+![CNN Confusion Matrix](results/confusion_matrix.png)
+
+### Classification Report
+
+The detailed precision, recall, and F1-score results are available in the [Classification Report](results/classification_report.txt).
+
+---
+
+## Gradio Web Application
+
+An interactive image classification application was developed using Gradio.
+
+Users can upload an image and receive the predicted CIFAR-10 class along with its confidence score.
+
+### Application Screenshot
+
+![Gradio Prediction Interface](screenshots/gradio_prediction.png)
+
+---
+
+## Conclusion
+
+The Deep CNN model achieved 86.38% test accuracy on the CIFAR-10 dataset.
+
+The project demonstrates image preprocessing, CNN training, model evaluation, and deployment through an interactive Gradio interface.
+
